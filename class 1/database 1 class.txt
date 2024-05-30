@@ -1,0 +1,10 @@
+/*create DATABASE aptech
+CREATE TABLE students(
+    stdId int PRIMARY KEY AUTO_INCREMENT,
+    stdName varchar(50),
+    stdEmail varchar(50) UNIQUE,
+    stdAge INT
+    )*/
+    -- add a columns or drop columns
+   -- ALTER TABLE students add stdCity varchar(50)
+   ALTER TABLE students DROP stdCity
