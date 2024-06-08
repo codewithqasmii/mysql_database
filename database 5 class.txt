@@ -1,0 +1,13 @@
+/*SELECT employee.*,department.*
+FROM employee
+INNER JOIN 
+department
+ON
+employee.dept_id = department.Id */
+
+SELECT employee.name AS 'employee Name', employee.salary, department.name as "Department"
+FROM employee
+INNER JOIN
+department
+ON
+employee.dept_id = department.Id

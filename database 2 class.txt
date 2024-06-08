@@ -1,0 +1,20 @@
+-- ALTER TABLE students CHANGE stdName stdName int
+-- ALTER TABLE students ADD stdTeacher varchar(100), ADD stdGender varchar(100)
+-- ALTER TABLE students CHANGE stdName stdName varchar(10)
+-- ALTER TABLE students CHANGE stdName studentName varchar(10)
+-- ALTER TABLE students add stdCity varchar(50)
+-- drop complete table
+-- DROP TABLE students
+
+
+-- INSERT into students(studentName,stdEmail,stdAge,stdcity) 
+-- VALUES
+-- ('ali','ali@gmail.com',21,'Karachi'),
+-- ('tauseef','tauseef@gmail.com',40,'Karachi');
+
+-- update
+-- UPDATE students SET studentName = 'ali khan', stdEmail = 'alikhan@gmail.com' WHERE stId = 1
+
+-- UPDATE students SET studentName = 'hamza', stdEmail = 'hamza@gmail.com' WHERE studentName = 'ali khan' and stdEmail = 'alikhan@gmail.com'
+
+-- UPDATE students SET studentName = 'hamza qasmi', stdEmail = 'hamzaqasmi@gmail.com' WHERE studentName = 'hamza' or stdEmail ='hamza@gmil.com'

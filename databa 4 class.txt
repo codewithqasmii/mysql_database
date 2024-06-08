@@ -1,0 +1,18 @@
+-- Aggregrate function built in
+-- sum(), min(),max(),count(), avg()
+-- SELECT sum(salary) AS 'sum of salaries' FROM employee
+-- SELECT min(salary) AS 'Minimum Salary' FROM employee
+-- SELECT max(salary) AS 'Maximum Salary' FROM employee
+-- SELECT avg(salary) AS 'average Salary' FROM employee
+-- SELECT count(id) AS 'Total' FROM employee
+
+-- it will call complete detail of minimum salary
+-- SELECT * FROM employee WHERE salary = (SELECT MIN(salary) AS 'Minumum Salary' from employee)
+
+
+--  it will group the coloum city
+-- SELECT* FROM employee WHERE city =  (SELECT city FROM employee GROUP BY (city))
+
+
+-- it will call the number of count of employee in different cities.
+SELECT city, COUNT(city) FROM employee GROUP BY city;

@@ -1,0 +1,23 @@
+/*CREATE TABLE employee(
+    Id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(50),
+    salary int,
+    city varchar(200),
+    age int,
+    gender ENUM ('male','female')
+    );*/
+    
+  -- SELECT * FROM employee WHERE age IN(20,22)
+  -- SELECT * FROM employee WHERE age >= 20
+  -- SELECT * FROM employee where age BETWEEN 20 AND 23
+  -- SELECT * FROM employee WHERE age != 20 AND age !=22;
+   
+
+
+/*CREATE TABLE department(
+    Id int PRIMARY KEY AUTO_INCREMENT,
+    name varchar(50)
+);*/
+
+-- add coloum named dept_id and add forein key 
+ALTER TABLE employee ADD dept_id int, ADD CONSTRAINT FOREIGN KEY(dept_id) REFERENCES department(id)
